@@ -42,6 +42,38 @@ body{
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
+#boton{
+    text-align: center;
+}
+.boton-encriptar{
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 328px;
+    height: 77px;
+    left: 11px;
+    top: 420px;
+    /* Dark blue/dark-blue-300 */
+    background: #0A3871;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* White */
+
+    color: #FFFFFF;
+}
 .desencriptador{
     position: absolute;
     width: 352px;
@@ -53,6 +85,24 @@ body{
     /* shadow */
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
+}
+.boton-desencriptar{
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 328px;
+    height: 77px;
+    left: 11px;
+    top: 450px;
+    /* Light gray */    
+    background: #D8DFE8;
+    border: 1px solid rgba(10, 56, 113, 0.24);
+    border-radius: 24px;
 }
 .caja-resultados{
     position: absolute;
