@@ -29,114 +29,94 @@ body{
     bottom: 2%;
     
 }
+
+/*Contenedora*/
 .encriptador{
-/* Rectangle 2 Encriptar */
-    position: absolute;
-    width: 352px;
+    position: relative;
+    display: flex;
+    width: 700px;
     height: 513px;
     left: 192px;
-    top: 200px;
+    top: 148px;
     /* White */
     background: #FFFFFF;
     /* shadow */
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
-
+::placeholder{color:rgba(226, 227, 255, 0.797);}
+/*Hijas de .encriptador*/
+.text-area{
+    position: absolute;
+    width: 650px;
+    left: 25px;
+    top: 55px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+    text-align: center;
+    color: #000000;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    text-transform: lowercase;
+}
+.informacion-botones{
+    position: absolute;
+    width: 226px;
+    left: 250px;
+    top: 15px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+    color: #FB3C00;
+    opacity: 0.8;
+}
 .boton-encriptar{
-    box-sizing: border-box;
-    /* Auto layout */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 24px;
     gap: 8px;
     position: absolute;
-    width: 328px;
-    height: 77px;
-    left: 11px;
-    top: 420px;
-    /* Dark blue/dark-blue-300 */
+    width: 305px;
+    left: 20px;
+    top: 413px;
+    font-size: 30px;
+    color: white;
     background: #0A3871;
     border-radius: 24px;
 }
-
-p{
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-    text-align: center;
-    /* White */
-    color: #FFFFFF;
-    /* Inside auto layout */
-
-}
-.desencriptador{
-    position: absolute;
-    width: 352px;
-    height: 541px;
-    left: 572px;
-    top: 225px;
-    /* White */
-    background: #FFFFFF;
-    /* shadow */
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-}
 .boton-desencriptar{
-    box-sizing: border-box;
-    /* Auto layout */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 24px;
     gap: 8px;
     position: absolute;
-    width: 328px;
-    height: 77px;
-    left: 11px;
-    top: 450px;
-    /* Light gray */    
-    background: #b3c6e0;
-    border: 1px solid rgba(10, 56, 113, 0.24);
+    width: 305px;
+    left: 365px;
+    top: 413px;
+    font-size: 30px;
+    color: white;
+    background: #79A9E4;
     border-radius: 24px;
 }
+/*Termina contenedora .encriptador*/
 .caja-resultados{
     position: absolute;
     width: 368px;
     height: 501px;
-    left: 57%;
-    top: 10%;
+    left: 952px;
+    top: 40px;
     /* White */
     background: #FFFFFF;
     /* shadow */
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
-}
-.resultados-texto{
-    /* Ningún mensaje fue encontrado */
-    position: absolute;
-    width: 50%;
-    height: 48px;
-    left: 25%;
-    top: 75%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    /* or 24px */
-    text-align: center;
-    /* Gray/gray-500 */
-    color: #343A40;
-}
-.muneco{
-    position: absolute;
-    width: auto;
-    height: auto;
-    left: 15%;
-    top: 15%;
 }

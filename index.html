@@ -4,6 +4,7 @@
         <meta chartset="UTF-8">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Encriptador | Challenge</title>
     </head>
     <body>
@@ -15,25 +16,34 @@
                 </a>
             </nav>
         </header>
-        <main class="background">
+        <main>
             <h1 class="titulo-encriptador">Encriptador De Texto</h1>
             <h1 class="titulo-encriptador"><br>CHALLENGE</h1>
-            <div class="encriptador">
-                <p id="boton" class="boton-encriptar">
-                    Encriptar
-                </p>
-            </div>
-            <div class="desencriptador">
-                <p class="boton-desencriptar">
-                    Desencriptar
-                </p>
-            </div>
-            <div class="caja-resultados">
-                <h1 class="muneco"><img src="images/muneco.png"></h1>
-                <p class="resultados-texto">
-                    Ningún mensaje fue encontrado.
-                </p>
-            </div>
+            
+            <section class="botones">
+                <div class="encriptador">
+                    <textarea class="text-area" cols="30" rows="10" placeholder="Escriba su texto aqui..."></textarea>
+                    <div class="informacion-botones">
+                        <h6><i class="fa-solid fa-circle-exclamation"></i> Solo letras mayúsculas y sin acentos.</h6>
+                    </div>
+                    <div class="btns">
+                        <button class="boton-encriptar">Encriptar</button>
+                        <button class="boton-desencriptar">Desencriptar</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <section>
+                <div class="caja-resultados">
+                    <textarea class="mensaje" cols="20" rows="10"></textarea>
+                    <p class="resultados-texto">
+                        Ningún mensaje fue encontrado.
+                    </p>
+                    <button class="copiar">Copiar</button>
+                </div>
+            </section>
+
             <div class="descarga-copia"></div>
             <div class="redes"></div>
             <div class="acerca-de"></div>
