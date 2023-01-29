@@ -7,47 +7,49 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Encriptador | Challenge</title>
     </head>
+ 
     <body>
-        <header>
-            <h1 class="logo"><img src="images/Vector-Logo.png"></h1>
-            <nav class="link-top">
-                 <a href="https://www.google.com/">
-                    CLICK! Tutorial de como usar.
-                </a>
-            </nav>
-        </header>
         <main>
-            <h1 class="titulo-encriptador">Encriptador De Texto</h1>
-            <h1 class="titulo-encriptador"><br>CHALLENGE</h1>
-            
-            <section class="botones">
-                <div class="encriptador">
-                    <textarea class="text-area" cols="30" rows="10" placeholder="Escriba su texto aqui..."></textarea>
-                    <div class="informacion-botones">
+            <header class="contenedor-cabeza" style="border: 3px solid white; padding: 2rem">
+                <h1 class="logo"><img src="images/Vector-Logo.png"></h1>
+                <h1 class="titulo-encriptador">Encriptador De Texto<br>CHALLENGE</h1>
+                <nav class="link-top">
+                     <a href="https://www.google.com/">CLICK! Tutorial de como usar.</a>
+                </nav>
+            </header>
+            <section class="contenedor-principal" style="border: 2px solid red; padding: 1rem">
+
+                <div class="contenedor-encriptador" style="border: 3px solid yellow; padding: 2rem">
+                    
+                    <div class="informacion-botones" style="border: 3px solid green; padding: 2rem">
                         <h6><i id="alert-logo" class="fa-solid fa-circle-exclamation"></i> Solo letras mayúsculas y sin acentos.</h6>
                     </div>
-                    <div><hr class="line-03"></div>
-                    <div class="btns">
-                        <button class="boton-encriptar">Encriptar</button>
-                        <button class="boton-desencriptar">Desencriptar</button>
-                    </div>
+                        <textarea class="text-area" cols="30" rows="10" placeholder="Escriba su texto aqui..."></textarea>
+                        <div>
+                            <hr class="line-03">
+                        </div>
+                    <button class="boton-encriptar">Encriptar</button>
+                    <button class="boton-desencriptar">Desencriptar</button>
                 </div>
-            </section>
-            <section class="resultados">
-                <div class="caja-resultados">
-                    <textarea class="mensaje" cols="20" rows="10"></textarea>
-                    <p class="resultados-texto">
-                        Ningún mensaje fue encontrado.
-                    </p>
+
+                <div class="contenedor-resultados" style="border: 3px solid pink; padding: 2rem">
+                    <textarea class="mensaje" cols="20" rows="10" pleaceholder="Ningún mensaje fue encontrado..."></textarea>
+                    <div>
+                        <hr class="line-03">
+                    </div>
                     <button class="copiar">Copiar</button>
                 </div>
             </section>
-
-            <div class="descarga-copia"></div>
-            <div class="redes"></div>
-            <div class="acerca-de"></div>
+            <section class="contenedor-inferior">
+                <div class="descarga-copia"  style="border: 3px solid black; padding: 2rem"></div>
+                <div class="redes"  style="border: 3px solid purple; padding: 2rem"></div>
+                <div class="acerca-de" style="border: 3px solid brown; padding: 2rem"></div>
+            </section>
         </main>
-        <footer>
+        <footer class="contenedor-footer">
+            <div>
+                    <h6>Hecho por Irandis Dev</h6>
+            </div>
         </footer>
     </body>
 </html>
